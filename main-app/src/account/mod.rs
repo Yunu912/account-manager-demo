@@ -55,3 +55,11 @@ pub mod account_enum {
         dbg!(user);
     }
 }
+
+pub mod manage_users {
+    use super::User;
+
+    pub fn print_users(users: Vec<User>) {
+        println!("users -> {:#?}", users);
+    }
+}

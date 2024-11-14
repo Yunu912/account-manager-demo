@@ -1,6 +1,8 @@
 use crate::account::User;
 
 mod account;
+mod account_input;
+mod stdio;
 
 fn main() {
     let user1 = account::manage_account::new(
@@ -14,5 +16,5 @@ fn main() {
         String::from("password2"),
     );
     let users: Vec<User> = vec![user1, user2];
-    account::manage_users::print_users(users);
+    account::list_users::print_users(users);
 }

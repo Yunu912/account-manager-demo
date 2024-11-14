@@ -56,7 +56,7 @@ pub mod account_enum {
     }
 }
 
-pub mod manage_users {
+pub mod list_users {
     use super::User;
 
     pub fn print_users(users: Vec<User>) {
